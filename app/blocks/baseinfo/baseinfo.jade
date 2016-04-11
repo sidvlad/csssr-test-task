@@ -1,6 +1,13 @@
 mixin baseinfo()
 	+b('fieldset').baseinfo&attributes(attributes)
 		+baseinfoinput(getData('baseinfo'))
+		+e.htmlacademy
+			| Выпускник
+			a(href="http://htmlacademy.ru") htmlacademy.ru
+			+e('label').label.--htmlacademy-label(for=htmlacademy-yes) Да
+				+e('input').htmlacademy-radio(type="radio" id="htmlacademy-yes" name="htmlacademy")
+			+e('label').label.--htmlacademy-label(for=htmlacademy-no) Нет
+				+e('input').htmlacademy-radio(type="radio" id="htmlacademy-no" name="htmlacademy")
 
 
 mixin baseinfoinput(data)
@@ -8,3 +15,4 @@ mixin baseinfoinput(data)
 		+e('label').label(for=item.name)
 			=item.title
 			+e('input').textinput(name=item.name id=item.name value=item.value placeholder=item.placeholder)
+

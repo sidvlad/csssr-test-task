@@ -1,0 +1,10 @@
+mixin baseinfo()
+	+b('fieldset').baseinfo&attributes(attributes)
+		+baseinfoinput(getData('baseinfo'))
+
+
+mixin baseinfoinput(data)
+	each item in data
+		+e('label').label(for=item.name)
+			=item.title
+			+e('input').textinput(name=item.name id=item.name value=item.value placeholder=item.placeholder)

@@ -2,8 +2,8 @@ mixin baseinfo()
 	+b('fieldset').baseinfo&attributes(attributes)
 		+baseinfoinput(getData('baseinfo'))
 		+e.htmlacademy
-			| Выпускник
-			a(href="http://htmlacademy.ru") htmlacademy.ru
+			| Выпускник&nbsp;
+			+e('a').link(href="http://htmlacademy.ru" target="_blank") htmlacademy.ru
 			+e('input').htmlacademy-radio(type="radio" id="htmlacademy-yes" name="htmlacademy" checked)
 			+e('label').label.--htmlacademy-label(for="htmlacademy-yes") Да
 			+e('input').htmlacademy-radio(type="radio" id="htmlacademy-no" name="htmlacademy")

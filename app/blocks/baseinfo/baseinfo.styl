@@ -2,14 +2,32 @@
 	display block
 	border 0
 	color #2f1b15
+	font-size 23px
+	font-weight bold
 
 	&__label
 		display flex
-		font-size 23px
-		font-weight bold
 
 		&--htmlacademy-label
 			padding-left 50px
+			position relative
+			cursor pointer
+
+			&:after
+				position absolute
+				content ''
+				sprite $radio
+				top 0
+				left 20px
+
+			&:before
+				position absolute
+				content ''
+				sprite $radiocheck
+				top 7px
+				left 27px
+				display none
+
 
 	&__textinput
 		flex-grow 1
@@ -27,5 +45,8 @@
 
 	&__htmlacademy-radio
 		display none
+
+	&__htmlacademy-radio:checked+.baseinfo__label--htmlacademy-label:before
+		display block
 
 

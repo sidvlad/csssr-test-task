@@ -4,11 +4,10 @@ mixin baseinfo()
 		+e.htmlacademy
 			| Выпускник
 			a(href="http://htmlacademy.ru") htmlacademy.ru
-			+e('label').label.--htmlacademy-label(for=htmlacademy-yes) Да
-				+e('input').htmlacademy-radio(type="radio" id="htmlacademy-yes" name="htmlacademy")
-			+e('label').label.--htmlacademy-label(for=htmlacademy-no) Нет
-				+e('input').htmlacademy-radio(type="radio" id="htmlacademy-no" name="htmlacademy")
-
+			+e('input').htmlacademy-radio(type="radio" id="htmlacademy-yes" name="htmlacademy" checked)
+			+e('label').label.--htmlacademy-label(for="htmlacademy-yes") Да
+			+e('input').htmlacademy-radio(type="radio" id="htmlacademy-no" name="htmlacademy")
+			+e('label').label.--htmlacademy-label(for="htmlacademy-no") Нет
 
 mixin baseinfoinput(data)
 	each item in data

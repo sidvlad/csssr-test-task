@@ -1,0 +1,10 @@
+mixin slider()
+	+b('fieldset').slider&attributes(attributes)
+		+e('legend').legend Уровень владения JavaScript
+		+e.line
+			+e.dot
+		+e('ul').levels
+			+e('li').level Не владею
+			+e('li').level Использую готовые решения
+			+e('li').level Использую готовые решения и умею их переделывать
+			+e('li').level Пишу сложные скрипты

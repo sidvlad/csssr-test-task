@@ -1,0 +1,65 @@
+.slider
+	margin-top 70px
+	margin-left 14px
+	display block
+	border none
+
+	&__legend
+		margin-bottom 25px
+
+	&__line
+		position relative
+		width $sliderwidth
+		height 20px
+		background-image url(/img/line.png)
+		background-repeat no-repeat
+		background-position bottom left
+
+	&__dot
+		position absolute
+		left 20%
+		margin-left -8px
+		sprite $triangle
+
+	&__levels
+		position relative
+		width $sliderwidth
+		height 60px
+		font-size 13px
+		font-weight 700
+
+	&__level
+		position absolute
+		padding-top 30px
+		width 170px
+
+		&:before
+			position absolute
+			top -1px
+			left -2px
+			display block
+			content ''
+			sprite $dashshort
+
+		&:first-child
+			left 0
+
+			&:before
+				left 0
+				sprite $dashlong
+
+		&:nth-child(2)
+			left 20%
+
+		&:nth-child(3)
+			left 50%
+
+		&:last-child
+			right 0
+			text-align right
+
+			&:before
+				right 0
+				left auto
+				sprite $dashlong
+

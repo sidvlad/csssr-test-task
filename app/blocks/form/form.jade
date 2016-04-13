@@ -1,7 +1,12 @@
 include ../baseinfo/baseinfo
+include ../baseinput/baseinput
 include ../skills/skills
+include ../slider/slider
+include ../date/date
 
 mixin form()
 	+b('form').form&attributes(attributes)
 		+baseinfo()
 		+skills()
+		+slider()
+		+date()

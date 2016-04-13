@@ -34,13 +34,13 @@ gulp.task('styles', () => (
 ));
 
 gulp.task('styles:lint', () => (
-	console.log(':-(')
-	// gulp.src(['app/**/*.styl', '!app/styles/**'])
-	// 	.pipe(stylint({
-	// 		reporter: {
-	// 			reporter: 'stylint-stylish',
-	// 			reporterOptions: {verbose: true}
-	// 		}
-	// 	}))
-	// 	.pipe(stylint.reporter())
+	gulp.src(['app/**/*.styl', '!app/styles/**'])
+		.pipe(stylint({
+
+			reporter: 'stylint-stylish',
+			config: '.stylintrc',
+			reporterOptions: {verbose: true}
+
+		}))
+		.pipe(stylint.reporter())
 ));

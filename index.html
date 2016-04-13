@@ -3,7 +3,6 @@
 
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=1000, initial-scale=1, maximum-scale=1, minimal-ui">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="imagetoolbar" content="no">
 		<meta name="msthemecompatible" content="no">
@@ -44,7 +43,7 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-		<link href="assets/styles/app.min.css?t=1460561910776" rel="stylesheet">
+		<link href="assets/styles/app.min.css?t=1460581502863" rel="stylesheet">
 	</head>
 
 	<body class="page">
@@ -155,11 +154,12 @@
 						<div class="slider__dot"></div>
 					</div>
 					<ul class="slider__levels">
-						<li class="slider__level">Не владею</li>
-						<li class="slider__level">Использую готовые решения</li>
-						<li class="slider__level">Использую готовые решения и умею их переделывать</li>
-						<li class="slider__level">Пишу сложные скрипты</li>
+						<li data-lval='0' class="slider__level">Не владею</li>
+						<li data-lval='20' class="slider__level">Использую готовые решения</li>
+						<li data-lval='50' class="slider__level">Использую готовые решения и умею их переделывать</li>
+						<li data-lval='100' class="slider__level">Пишу сложные скрипты</li>
 					</ul>
+					<input value="50" type="hidden" class="slider__currentlevel" />
 				</fieldset>
 				<div class="date">
 					<label for="date" class="baseinput baseinput--date">Дата заполнения

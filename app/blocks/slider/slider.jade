@@ -4,7 +4,8 @@ mixin slider()
 		+e.line
 			+e.dot
 		+e('ul').levels
-			+e('li').level Не владею
-			+e('li').level Использую готовые решения
-			+e('li').level Использую готовые решения и умею их переделывать
-			+e('li').level Пишу сложные скрипты
+			+e('li').level(data-lval=0) Не владею
+			+e('li').level(data-lval=20) Использую готовые решения
+			+e('li').level(data-lval=50) Использую готовые решения и умею их переделывать
+			+e('li').level(data-lval=100) Пишу сложные скрипты
+		+e('input').currentlevel(value="50" type="hidden")

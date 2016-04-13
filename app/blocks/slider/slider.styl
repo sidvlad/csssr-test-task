@@ -1,7 +1,6 @@
 .slider
 	margin-top 70px
 	margin-left 14px
-	display block
 	border none
 
 	&__legend
@@ -17,21 +16,23 @@
 
 	&__dot
 		position absolute
-		left 20%
+		left 0
 		margin-left -8px
+		cursor pointer
 		sprite $triangle
+		transition all .05s ease-in-out
 
 	&__levels
 		position relative
 		width $sliderwidth
 		height 60px
 		font-size 13px
-		font-weight 700
 
 	&__level
 		position absolute
 		padding-top 30px
 		width 170px
+		cursor pointer
 
 		&:before
 			position absolute
@@ -47,12 +48,6 @@
 			&:before
 				left 0
 				sprite $dashlong
-
-		&:nth-child(2)
-			left 20%
-
-		&:nth-child(3)
-			left 50%
 
 		&:last-child
 			right 0

@@ -15,80 +15,81 @@
 		<meta name="theme-color" content="#ffffff">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<link sizes="57x57" href="/apple-touch-icon-57x57.png" rel="apple-touch-icon">
-		<link sizes="114x114" href="/apple-touch-icon-114x114.png" rel="apple-touch-icon">
-		<link sizes="72x72" href="/apple-touch-icon-72x72.png" rel="apple-touch-icon">
-		<link sizes="144x144" href="/apple-touch-icon-144x144.png" rel="apple-touch-icon">
-		<link sizes="60x60" href="/apple-touch-icon-60x60.png" rel="apple-touch-icon">
-		<link sizes="120x120" href="/apple-touch-icon-120x120.png" rel="apple-touch-icon">
-		<link sizes="76x76" href="/apple-touch-icon-76x76.png" rel="apple-touch-icon">
-		<link sizes="152x152" href="/apple-touch-icon-152x152.png" rel="apple-touch-icon">
-		<link sizes="180x180" href="/apple-touch-icon-180x180.png" rel="apple-touch-icon">
-		<link sizes="192x192" href="/favicon-192x192.png" rel="icon" type="image/png">
-		<link sizes="160x160" href="/favicon-160x160.png" rel="icon" type="image/png">
-		<link sizes="96x96" href="/favicon-96x96.png" rel="icon" type="image/png">
-		<link sizes="16x16" href="/favicon-16x16.png" rel="icon" type="image/png">
-		<link sizes="32x32" href="/favicon-32x32.png" rel="icon" type="image/png">
-		<link rel="manifest" href="/manifest.json">
+		<link sizes="57x57" href="apple-touch-icon-57x57.png" rel="apple-touch-icon">
+		<link sizes="114x114" href="apple-touch-icon-114x114.png" rel="apple-touch-icon">
+		<link sizes="72x72" href="apple-touch-icon-72x72.png" rel="apple-touch-icon">
+		<link sizes="144x144" href="apple-touch-icon-144x144.png" rel="apple-touch-icon">
+		<link sizes="60x60" href="apple-touch-icon-60x60.png" rel="apple-touch-icon">
+		<link sizes="120x120" href="apple-touch-icon-120x120.png" rel="apple-touch-icon">
+		<link sizes="76x76" href="apple-touch-icon-76x76.png" rel="apple-touch-icon">
+		<link sizes="152x152" href="apple-touch-icon-152x152.png" rel="apple-touch-icon">
+		<link sizes="180x180" href="apple-touch-icon-180x180.png" rel="apple-touch-icon">
+		<link sizes="192x192" href="favicon-192x192.png" rel="icon" type="image/png">
+		<link sizes="160x160" href="favicon-160x160.png" rel="icon" type="image/png">
+		<link sizes="96x96" href="favicon-96x96.png" rel="icon" type="image/png">
+		<link sizes="16x16" href="favicon-16x16.png" rel="icon" type="image/png">
+		<link sizes="32x32" href="favicon-32x32.png" rel="icon" type="image/png">
+		<link rel="manifest" href="manifest.json">
 		<meta name="application-name" content="">
 		<meta name="msapplication-tooltip" content="">
 		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/mstile-large.png">
+		<meta name="msapplication-TileImage" content="mstile-large.png">
 		<meta name="msapplication-starturl" content="https://csssr.github.io/csssr-project-template/">
 		<meta name="msapplication-tap-highlight" content="no">
-		<meta name="msapplication-square70x70logo" content="/mstile-small.png">
-		<meta name="msapplication-square150x150logo" content="/mstile-medium.png">
-		<meta name="msapplication-wide310x150logo" content="/mstile-wide.png">
-		<meta name="msapplication-square310x310logo" content="/mstile-large.png">
+		<meta name="msapplication-square70x70logo" content="mstile-small.png">
+		<meta name="msapplication-square150x150logo" content="mstile-medium.png">
+		<meta name="msapplication-wide310x150logo" content="mstile-wide.png">
+		<meta name="msapplication-square310x310logo" content="mstile-large.png">
 		<title>CSSSR Project Template</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-		<link href="/assets/styles/app.min.css?t=1460502977750" rel="stylesheet">
+		<link href="assets/styles/app.min.css?t=1460560381178" rel="stylesheet">
 	</head>
 
 	<body class="page">
 		<div class="index">
 			<header class="header">
 				<div class="header__logo">
-					<img src="/img/logo.png" class="header__image" alt="" role="presentation" />
+					<img src="img/logo.png" class="header__image" alt="" role="presentation" />
 					<div class="header__text">Секретный архив учреждения</div>
 				</div>
 				<div class="header__stamp">
-					<img src="/img/stamp.png" class="header__image" alt="" role="presentation" />
+					<img src="img/stamp.png" class="header__image" alt="" role="presentation" />
 				</div>
 			</header>
 			<div class="title">
-				<img src="/img/title.png" class="title__image" alt="" role="presentation" />
+				<img src="img/title.png" class="title__image" alt="" role="presentation" />
 			</div>
 			<form class="form">
 				<fieldset class="baseinfo">
-					<label for="fullname" class="baseinfo__label">Полное ФИО
+					<label for="fullname" class="baseinput baseinput--baseinfo">Полное ФИО
 						<input name="fullname" id="fullname" value="Богов Владимир Михайлович" placeholder="Иванов Иван Иванович"
-							class="baseinfo__textinput" type="text" />
+							class="baseinput__textinput baseinput__textinput--baseinfo" type="text" />
 					</label>
-					<label for="birthyear" class="baseinfo__label">Год рождения
-						<input name="birthyear" id="birthyear" value="1984" placeholder="1990" class="baseinfo__textinput" type="text"
-						/>
+					<label for="birthyear" class="baseinput baseinput--baseinfo">Год рождения
+						<input name="birthyear" id="birthyear" value="1984" placeholder="1990" class="baseinput__textinput baseinput__textinput--baseinfo"
+							type="text" />
 					</label>
-					<label for="placeliving" class="baseinfo__label">Место жительства
+					<label for="placeliving" class="baseinput baseinput--baseinfo">Место жительства
 						<input name="placeliving" id="placeliving" value="г. Бар, Черногория" placeholder="г. Иваново, Россия"
-							class="baseinfo__textinput" type="text" />
+							class="baseinput__textinput baseinput__textinput--baseinfo" type="text" />
 					</label>
-					<label for="skype" class="baseinfo__label">Скайп
-						<input name="skype" id="skype" value="sidvlad14" placeholder="ivanov" class="baseinfo__textinput" type="text" />
+					<label for="skype" class="baseinput baseinput--baseinfo">Скайп
+						<input name="skype" id="skype" value="sidvlad14" placeholder="ivanov" class="baseinput__textinput baseinput__textinput--baseinfo"
+							type="text" />
 					</label>
-					<label for="mail" class="baseinfo__label">Почта
-						<input name="mail" id="mail" value="bogov.v.m@gmail.com" placeholder="ivanov@gmail.com" class="baseinfo__textinput"
+					<label for="mail" class="baseinput baseinput--baseinfo">Почта
+						<input name="mail" id="mail" value="bogov.v.m@gmail.com" placeholder="ivanov@gmail.com" class="baseinput__textinput baseinput__textinput--baseinfo"
 							type="text" />
 					</label>
 					<div class="baseinfo__htmlacademy">Выпускник&nbsp;
 						<a href="http://htmlacademy.ru" target="_blank" class="baseinfo__link">htmlacademy.ru</a>
 						<input type="radio" id="htmlacademy-yes" name="htmlacademy" checked="true" class="baseinfo__htmlacademy-radio"
 						/>
-						<label for="htmlacademy-yes" class="baseinfo__label baseinfo__label--htmlacademy-label">Да</label>
+						<label for="htmlacademy-yes" class="baseinfo__label">Да</label>
 						<input type="radio" id="htmlacademy-no" name="htmlacademy" class="baseinfo__htmlacademy-radio" />
-						<label for="htmlacademy-no" class="baseinfo__label baseinfo__label--htmlacademy-label">Нет</label>
+						<label for="htmlacademy-no" class="baseinfo__label">Нет</label>
 					</div>
 				</fieldset>
 				<fieldset class="skills">
@@ -148,6 +149,24 @@
 						</div>
 					</div>
 				</fieldset>
+				<fieldset class="slider">
+					<legend class="slider__legend">Уровень владения JavaScript</legend>
+					<div class="slider__line">
+						<div class="slider__dot"></div>
+					</div>
+					<ul class="slider__levels">
+						<li class="slider__level">Не владею</li>
+						<li class="slider__level">Использую готовые решения</li>
+						<li class="slider__level">Использую готовые решения и умею их переделывать</li>
+						<li class="slider__level">Пишу сложные скрипты</li>
+					</ul>
+				</fieldset>
+				<div class="date">
+					<label for="date" class="baseinput baseinput--date">Дата заполнения
+						<input name="date" id="date" value="13.04.2016" placeholder="01.01.2014" class="baseinput__textinput baseinput__textinput--date"
+							type="text" />
+					</label>
+				</div>
 			</form>
 		</div>
 		<script src="/assets/scripts/app.min.js"></script>

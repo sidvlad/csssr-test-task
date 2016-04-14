@@ -33,7 +33,7 @@
 		{
 			"name": "coffeescript",
 			"title": "CoffeeScript",
-			"checked": true
+			"checked": false
 		}
 	],
 	[
@@ -55,17 +55,17 @@
 		{
 			"name": "android",
 			"title": "Верстка под Android",
-			"checked": true
+			"checked": false
 		},
 		{
 			"name": "ios",
 			"title": "Верстка под iOS",
-			"checked": true
+			"checked": false
 		},
 		{
 			"name": "windows",
 			"title": "Верстка под Windows Phone",
-			"checked": true
+			"checked": false
 		}
 	],
 	[

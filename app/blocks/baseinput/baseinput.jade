@@ -1,5 +1,5 @@
 mixin baseinput(data, mod)
 	each item in data
-		+b('label').baseinput(for=item.name class='--'+mod)
+		+b('label').baseinput(for=item.name class='_'+mod)
 			=item.title
-			+e('input').textinput(name=item.name id=item.name value=item.value placeholder=item.placeholder class='--'+mod)
+			+e('input').textinput(name=item.name id=item.name value=item.value placeholder=item.placeholder class='_'+mod)

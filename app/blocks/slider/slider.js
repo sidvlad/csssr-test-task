@@ -1,5 +1,6 @@
 var slider = (function () {
 	var init = function () {
+		var body = document.querySelector('body');
 		var levelsElement = document.querySelector('.slider__levels');
 		var hiddenInput = document.querySelector('.slider__currentlevel');
 		var line = document.querySelector('.slider__line');
@@ -26,15 +27,17 @@ var slider = (function () {
 		dot.onmousedown = function () {
 			mousedown = true;
 		};
-		line.onmouseup = function () {
-			mousedown = false;
+		body.onmouseup = function () {
+			if (mousedown) {
+				mousedown = false;
+			}
 		};
 		line.onclick = function (event) {
-			setVal(parseInt((event.pageX - offset) * 100 / width));
+			setVal(Math.round((event.pageX - offset) * 100 / width));
 		};
-		line.onmousemove = function (event) {
+		body.onmousemove = function (event) {
 			if (mousedown) {
-				setVal(parseInt((event.pageX - offset) * 100 / width));
+				setVal(Math.round((event.pageX - offset) * 100 / width));
 			}
 		};
 
@@ -43,9 +46,6 @@ var slider = (function () {
 		}
 
 		function setVal(val) {
-			if (val === undefined) {
-				return;
-			}
 			if (val < 0 || val > 100) {
 				return;
 			}
